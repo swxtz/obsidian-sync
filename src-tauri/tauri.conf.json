@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "obsidian-sync",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "identifier": "com.obsidian-sync.app",
   "build": {
     "beforeDevCommand": "pnpm dev",
@@ -12,9 +12,19 @@
   "app": {
     "windows": [
       {
-        "title": "obsidian-sync",
+        "title": "Obsidian Sync",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "center": true,
+        "resizable": true,
+        "alwaysOnTop": true,
+        "titleBarStyle": "Overlay",
+        "theme": "Dark",
+        "backgroundColor": "#121214",
+        "devtools": true,
+        "hiddenTitle": true,
+        "skipTaskbar": true
+        
       }
     ],
     "security": {
